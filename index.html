@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+ <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+   <title></title>
+ </head>
+ <body ng-controller="myCtrl">
+   <input type="text" ng-model="newPerson.first_name"  placeholder="first_name"name="" value="">
+   <input type="text" ng-model="newPerson.last_name" placeholder="last_name" name="" value="">
+   <input type="text" ng-model="newPerson.gender"  placeholder="gender"name="" value="">
+   <input type="text" ng-model="newPerson.email" placeholder="email" name="" value="">
+   <button type="button" name="button" ng-click="addNewPerson(newPerson)">Submit</button>
+
+
+   <div class="" ng-repeat="person in people">
+     <ul class="">
+       <li class=""> {{person.first_name}} </li>
+       <li class=""> {{person.last_name}} </li>
+       <li class=""> {{person.gender}} </li>
+       <li class=""> {{person.email}} </li>
+     </ul>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+   <script src="app.js" charset="utf-8"></script>
+   <script src="ctrl.js" charset="utf-8"></script>
+   <script src="service.js" charset="utf-8"></script>
+</body>
+</html>
